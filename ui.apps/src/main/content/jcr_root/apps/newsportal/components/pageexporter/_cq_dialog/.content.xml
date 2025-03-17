@@ -15,8 +15,24 @@
                     <text
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Text"
-                            name="./text"/>
+                            fieldLabel="Title"
+                            fieldDescription="Description"
+                            name="./title"/>
+                    <description
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Description"
+                            fieldDescription="Description"
+                            name="./description"/>
+                    <country
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Select countries"
+                            name="./country"/>
+                    <datasource
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="acs-common/components/utilites/genericlist/datasource"
+                            path="/etc/acs-common/lists/countries"/>
                 </items>
             </column>
         </items>
